@@ -10,6 +10,13 @@ from pages.github_pages import open_main_page, search_for_repository, go_to_repo
 
 
 def test_lamda_steps():
+    allure.dynamic.tag('Web')
+    allure.dynamic.severity(Severity.BLOCKER)
+    allure.dynamic.label('owner', 'Kastro')
+    allure.dynamic.feature('Задачи в репозитории')
+    allure.dynamic.story('Невторизованный пользователь не может создать задачу в репозитории')
+    allure.dynamic.link('https://github.com', name='Testing')
+
     with allure.step('Открыть главную страницу'):
         browser.open('https://github.com/')
 
