@@ -1,0 +1,1 @@
+# Kastro_qa_guru_allure_report__github_automation_test_hw10
