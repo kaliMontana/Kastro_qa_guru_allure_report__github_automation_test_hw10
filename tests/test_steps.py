@@ -1,4 +1,5 @@
 import allure
+from allure_commons.types import Severity
 from selene import by
 from selene.support.conditions import be
 from selene.support.shared import browser
@@ -27,6 +28,12 @@ def test_lamda_steps():
         s(by.partial_text('#81')).should(be.visible)
 
 
+@allure.tag('Web')
+@allure.severity(Severity.CRITICAL)
+@allure.label('owner', 'Kastro')
+@allure.feature('Задачи в репозитории')
+@allure.story('Авторизованный пользователь может создать задачу в репозитории')
+@allure.link('https://github.com', name='Testing')
 def test_decorator_steps():
     open_main_page()
     search_for_repository('eroshenkoam/allure-example')
