@@ -12,3 +12,7 @@
 3. Шаги с декоратором @allure.step
 
 4. Разметку тестов всеми аннотациями
+
+
+- Additional argument for test in pycharm: --alluredir=allure-results
+- Start from terminal: python -m pytest
