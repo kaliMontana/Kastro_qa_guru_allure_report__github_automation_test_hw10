@@ -14,5 +14,12 @@
 4. Разметку тестов всеми аннотациями
 
 
-- Additional argument for test in pycharm: --alluredir=allure-results
+- Чтобы для каждого теста не прописывать настройки для аллюр отчета надо в корне проекта файл 
+pytest.ini с настройкой:
+[pytest]
+addopts = --alluredir=allure-results
+
+- Or Additional argument for test in pycharm: --alluredir=allure-results
+
+
 - Start from terminal: python -m pytest
