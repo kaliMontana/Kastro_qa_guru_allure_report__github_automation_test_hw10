@@ -19,7 +19,7 @@ pytest.ini с настройкой:
 [pytest]
 addopts = --alluredir=allure-results
 
-- Or Additional argument for test in pycharm: --alluredir=allure-results
+- Or Additional argument for each test in pycharm: --alluredir=allure-results
 
 
 - Start from terminal: python -m pytest
